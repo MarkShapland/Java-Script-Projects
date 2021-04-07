@@ -16,3 +16,10 @@ function myFunction2() {                         //Defining a function and namin
     var result = dog.fontcolor("green");         //Using the fontcolor method  on dog variable
     document.getElementById("dogs").innerHTML = result; //Putting the value  of result into HTML element with "dogs" id
 } 
+
+function Function_Challenge() {                         // //Defining a function and naming it 
+    var laptop = "Laptops are portable computers.";
+    laptop += " Laptop computers can also be carried in a backpack or a bag.";  ////Defining a variable and using the += operator to concatenate the string
+document.getElementById("computer").innerHTML = laptop;  //Putting the value  of result into HTML element with "computer" id
+}
+
