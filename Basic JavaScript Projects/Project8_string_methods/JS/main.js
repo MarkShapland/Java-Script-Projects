@@ -44,7 +44,7 @@ function Fixed_method() { //fixed method
     document.getElementById("Fixed").innerHTML = y;
 }
 
-function Valueof_method() {
+function Valueof_method() { //value of method
     var x = "Primitive value.";
     var y = x.valueOf();
     document.getElementById("Valueof").innerHTML = y;
