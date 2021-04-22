@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_DOCUMENT;
+            
+            //creates a text string
+            var Tree = "<tree>" + "<species>Maple Tree</species>" + "<average_height>40 meters</average_height>" 
+                + "<group>deciduous</group>" + "</tree>";
+
+
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+            
+            //creates a new XmL DOM object using the text string
+            XML_DOCUMENT = XML_Parser.parseFromString(Tree, "text/html");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_DOCUMENT.getElementsByTagName("species")[0].childNodes [0].nodeValue;
+        </script>
+    </body>
+</html>
